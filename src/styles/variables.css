@@ -1,0 +1,12 @@
+:root {
+    --bg-main: #23272f;
+    --bg-sidebar: #1a1d23;
+    --bg-topbar: #2c313a;
+    --sidebar-width: 30vh;
+    --text-main: #e0e6eb;
+    --accent: #7ab8f5;
+    --font-body: 'Satoshi-Regular', 'Satoshi-Variable', 'Satoshi-Light', 'Satoshi-Medium', 'Satoshi-Bold', Arial, sans-serif;
+    --border-subtle: #353b45;
+    --text-secondary: #78858A;
+}
+  

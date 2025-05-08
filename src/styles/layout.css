@@ -1,0 +1,70 @@
+@import url('../font/Satoshi_Complete/Fonts/WEB/css/satoshi.css');
+
+* { 
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Satoshi-Regular', 'Satoshi-Variable', 'Satoshi-Light', 'Satoshi-Medium', 'Satoshi-Bold', Arial, sans-serif;
+}
+
+body { 
+    background: var(--bg-main); 
+    color: var(--text-main); 
+    font-family: var(--font-body);
+}
+
+.app-container { display: flex;
+    min-height: 100vh;
+}
+
+.page-wrapper {
+    flex: 1;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    transition: margin-left 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+
+.page-wrapper.with-sidebar {
+    margin-left: var(--sidebar-width);
+}
+
+.main-content { 
+    flex: 1; 
+    padding: 2rem; 
+    margin-left: 20px;
+    overflow-y: auto;
+}
+
+.section {
+    max-width: 800px; 
+    margin: auto; 
+    padding-bottom: 4rem; 
+}
+
+@media (min-width: 751px) {
+    /* Em telas maiores, a sidebar sempre empurra o conteúdo */
+    .sidebar.open {
+        transform: translateX(0);
+    }
+    .page-wrapper.with-sidebar {
+        margin-left: var(--sidebar-width);
+    }
+}
+
+@media (max-width: 750px) {
+    /* Em telas menores, a sidebar fica por cima do conteúdo */
+    .page-wrapper {
+        margin-left: 0 !important;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        padding: 1.5rem;
+    }
+    
+    /* Sidebar não empurra o conteúdo em telas pequenas */
+    .page-wrapper.with-sidebar {
+        margin-left: 0;
+    }
+}

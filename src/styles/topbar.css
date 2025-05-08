@@ -1,0 +1,84 @@
+.topbar {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0;
+    background: var(--bg-topbar); 
+    color: var(--text-main);
+    position: sticky;
+    top: 0;
+    z-index: 15;
+    transition: padding 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* Topbar quando a sidebar está fechada (mais espaço) */
+.page-wrapper:not(.with-sidebar) .topbar {
+    padding-left: 2rem;
+}
+
+/* Topbar quando a sidebar está aberta (menos espaço) */
+.page-wrapper.with-sidebar .topbar {
+    padding-left: 1rem;
+}
+
+.sidebar-toggle {
+    background: none;
+    border: none;
+    color: var(--text-main);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.sidebar-toggle:hover {
+    opacity: 1;
+}
+
+.breadcrumb { 
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 1rem;
+    transition: margin-left 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+
+.breadcrumb a { 
+    color: var(--accent); 
+    text-decoration: none;
+    font-weight: 500;
+}
+  
+.breadcrumb span { 
+    font-size: 0.9rem; 
+}
+
+@media (min-width: 751px) {
+    /* Maior margem quando não tem o botão de menu */
+    .breadcrumb {
+        margin-left: 0.5rem;
+    }
+
+    /* Destaque do botão de menu em telas maiores */
+    .sidebar-toggle {
+        margin-left: 0.5rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .topbar {
+        padding-left: 1rem !important; /* Sobrescrever para telas pequenas */
+    }
+    
+    .breadcrumb {
+        margin-left: 0.5rem;
+        max-width: calc(100% - 50px);
+    }
+}
+  

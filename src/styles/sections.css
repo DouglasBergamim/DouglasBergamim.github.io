@@ -1,0 +1,31 @@
+.section h2 { 
+    font-size: 1.75rem;
+    margin-bottom: 1.1rem;
+    text-align: left;
+    color: var(--text-main);
+    font-family: var(--font-body);
+}
+
+.section h2 + p {
+    margin-bottom: 1.1rem;
+}
+
+.section h2:not(:first-of-type) {
+    margin-top: 2.5rem;
+}
+
+.section h1 { 
+    font-size: 2.3rem;
+    margin-bottom: 2.5rem; 
+    text-align: left;
+    color: var(--text-main);
+    font-family: var(--font-body);
+}
+
+.section p {
+    line-height: 1.5;
+    font-size: 1.0rem;
+    color: var(--text-main);
+    font-family: var(--font-body);
+    text-align: justify;
+}
