@@ -17,11 +17,10 @@
     color: var(--text-secondary);
     will-change: transform;
     z-index: 10;
-    /* Por padrão, fora da tela */
     transform: translateX(-100%);
 }
 
-/* Quando aberto, mostrar */
+
 .sidebar.open {
     transform: translateX(0);
 }
@@ -29,11 +28,11 @@
 @media (max-width: 750px) {
   .toggle-btn.internal { display: block; }
   .sidebar {
-    width: 80%; /* Reduzir a largura em telas pequenas */
+    width: 80%; /* Reduced width for small screens */
     max-width: 280px;
-    top: 56px; /* Altura do topbar */
-    height: calc(100vh - 56px); /* Ajustar altura para começar exatamente abaixo do topbar */
-    z-index: 5; /* Abaixo do topbar */
+    top: 56px; /* Topbar height */
+    height: calc(100vh - 56px); /* Adjust height to start exactly below the topbar */
+    z-index: 5; /* Below the topbar */
     margin-left: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }

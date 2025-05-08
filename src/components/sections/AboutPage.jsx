@@ -32,7 +32,7 @@ const AboutPage = () => {
                 <Timeline data={aboutContent.timelineData} />
             </div>
             
-            {/* Additional sections */}
+            {/* Projects sections */}
             <div style={{marginTop: '2.5rem', color: 'var(--text-main)', fontSize: '1.08rem', lineHeight: 1.7, textAlign: 'justify', fontFamily: 'var(--font-body)', width: '100%'}}>
                 {aboutContent.sections.slice(1).map((section, sectionIndex) => (
                     <React.Fragment key={sectionIndex}>

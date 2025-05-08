@@ -1,4 +1,11 @@
 import React, { useEffect, useState } from 'react';
+/**
+ * ProjectCard Component
+ * 
+ * A reusable card component that displays project information.
+ * It shows the project title, description, image, and tags.
+ * The card links to the project's GitHub repository and displays the last commit date.
+ */
 
 const cardBaseStyle = {
   display: 'flex',

@@ -15,8 +15,8 @@ export const projects = [
     title: 'Site Portfólio',
     description: 'This site was developed in React to serve as my personal portfolio. It features an animated timeline, modern design, and custom sections to showcase what I\'ve been working on over the past few years and highlight some of the things I\'m most passionate about. It reflects both my academic journey and personal interests.',
     image: '/images/site.png',
-    github: 'https://github.com/seu-usuario/site-portfolio',
-    repo: 'seu-usuario/site-portfolio',
+    github: 'https://github.com/DouglasBergamim/DouglasBergamim.io',
+    repo: 'DouglasBergamim/DouglasBergamim.io',
     tags: ['React', 'CSS', 'Vite'],
     detailPage: '/projects/site-portfolio'
   }, 

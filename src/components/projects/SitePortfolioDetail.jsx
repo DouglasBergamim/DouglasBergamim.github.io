@@ -1,5 +1,16 @@
 import React from 'react';
 
+/**
+ * SitePortfolioDetail Component
+ * 
+ * This is a dedicated page for the portfolio site project.
+ * It displays detailed information about the portfolio website itself,
+ * including features, technologies used, and development context.
+ * 
+ * Note: This is a placeholder component that can be fully implemented later
+ * with more detailed content, screenshots, and technical specifications.
+ */
+
 const SitePortfolioDetail = () => (
   <section style={{maxWidth: '800px', margin: '0 auto', paddingTop: '2.5rem'}}>
     <h2 style={{fontSize: '2.3rem', color: 'var(--text-main)', marginBottom: '1.5rem'}}>Site Portfólio</h2>

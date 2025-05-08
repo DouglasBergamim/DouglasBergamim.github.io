@@ -32,7 +32,7 @@ const TopBar = ({ toggleSidebar, open }) => {
 
   return (
     <header className="topbar">
-      {/* Botão do menu sempre visível para toggle da sidebar */}
+      {/* Button to toggle the sidebar */}
       <button className="sidebar-toggle" onClick={toggleSidebar} aria-label={open ? "Close sidebar" : "Open sidebar"}>
         <FiMenu size={24} />
       </button>

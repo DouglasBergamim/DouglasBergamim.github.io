@@ -27,6 +27,7 @@ const aboutContent = {
       }
     }
   ],
+  // Timeline section contains chronological events showing education and professional experience
   timelineData: [
     { year: 2023, isYear: true },
     { 
