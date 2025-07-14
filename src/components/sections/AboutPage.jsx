@@ -50,9 +50,12 @@ const AboutPage = () => {
                                     </p>
                                 ))}
                                 <div style={{marginTop: '1.5rem', marginBottom: '2rem'}}>
-                                    {projects.find(project => project.id === 'CT213') ? 
-                                      <ProjectCard {...projects.find(project => project.id === 'CT213')} /> : 
-                                      <ProjectCard {...projects[0]} />}
+                                    {projects.find(project => project.id === 'wikipedia-bias') && 
+                                      <ProjectCard {...projects.find(project => project.id === 'wikipedia-bias')} />
+                                    }
+                                    {projects.find(project => project.id === 'CT213') && 
+                                      <ProjectCard {...projects.find(project => project.id === 'CT213')} />
+                                    }
                                 </div>
                             </>
                         ) : (
